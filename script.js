@@ -33,13 +33,13 @@ window.addEventListener('scroll', () => {
 
 // EmailJS integration
 (function() {
-  emailjs.init("user_123456"); // Replace with your actual EmailJS Public Key
+  emailjs.init("FhDbrbYN5igpr7OQZ"); // Your EmailJS Public Key
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent page refresh
 
-  emailjs.sendForm('service_cfmgrnf', 'template_1ocqkt8', this)
+  emailjs.sendForm('service_cfmgrnf', 'template_lz5fkpi', this)
     .then(function() {
       alert('Message sent successfully!');
       document.getElementById('contact-form').reset(); // Clear form
