@@ -1,4 +1,4 @@
-// Smooth scrolling and active state management (your existing code)
+// Smooth scrolling and active state management
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -12,6 +12,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   });
 });
 
+// Highlight the active section on scroll
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('nav ul li a');
@@ -32,7 +33,7 @@ window.addEventListener('scroll', () => {
 
 // EmailJS integration
 (function() {
-  emailjs.init("your-public-key"); // Replace with your Public Key (from EmailJS dashboard)
+  emailjs.init("user_123456"); // Replace with your actual EmailJS Public Key
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
