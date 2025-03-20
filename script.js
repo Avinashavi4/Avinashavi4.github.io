@@ -1,4 +1,4 @@
-// Smooth scrolling and active state management
+
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -12,7 +12,6 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   });
 });
 
-// Highlight the active section on scroll
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('nav ul li a');
@@ -33,7 +32,7 @@ window.addEventListener('scroll', () => {
 
 // EmailJS integration
 (function() {
-  emailjs.init("FhDbrbYN5lgpr7OQZ") // Replace with your actual EmailJS Public Key
+  emailjs.init("yQG3aViKjak3uaBd2")
     .then(() => {
       console.log("EmailJS initialized successfully!");
     }, (error) => {
@@ -42,12 +41,12 @@ window.addEventListener('scroll', () => {
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent page refresh
+  event.preventDefault(); 
 
   emailjs.sendForm('service_cfmgrnf', 'template_1z5fkpl', this)
     .then(function() {
       alert('Message sent successfully!');
-      document.getElementById('contact-form').reset(); // Clear form
+      document.getElementById('contact-form').reset(); 
     }, function(error) {
       alert('Failed to send message: ' + JSON.stringify(error));
     });
