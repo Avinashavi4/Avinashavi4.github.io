@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
 
 // EmailJS integration
 (function() {
-  emailjs.init("FhDbrbYN5igpr7OQZ"); // Your EmailJS Public Key
+  emailjs.init("FhDbrbYN5lgpr7OQZ"); // Your EmailJS Public Key
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
