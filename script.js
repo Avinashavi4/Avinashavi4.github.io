@@ -33,7 +33,12 @@ window.addEventListener('scroll', () => {
 
 // EmailJS integration
 (function() {
-  emailjs.init("FhDbrbYN5lgpr7OQZ"); // Your EmailJS Public Key
+  emailjs.init("FhDbrbYN5lgpr7OQZ") // Replace with your actual EmailJS Public Key
+    .then(() => {
+      console.log("EmailJS initialized successfully!");
+    }, (error) => {
+      console.error("EmailJS initialization failed:", error);
+    });
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
