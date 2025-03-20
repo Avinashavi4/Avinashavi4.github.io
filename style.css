@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, cinematic font */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #b0b7bf; /* Light metallic text */
+  background-color: #1a2526; /* Deep navy background */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(135deg, #2f2f2f, #1a2526); /* Dark gray to navy gradient */
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Deep shadow */
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d4a017; /* Gold accent for logo */
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #b0b7bf; /* Metallic silver */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+  background: rgba(212, 160, 23, 0.1); /* Subtle gold glow */
+  color: #fff;
+}
+
+nav ul li a.active {
+  background: #d4a017; /* Deep gold for active state */
+  color: #1a2526; /* Dark navy text for contrast */
+  box-shadow: 0 0 10px rgba(212, 160, 23, 0.5); /* Gold reflection */
+}
+
+/* Home Section */
+.home-section {
+  background: linear-gradient(135deg, #1a2526, #2f2f2f); /* Navy to gray gradient */
+  padding: 120px 0;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  border: 5px solid rgba(212, 160, 23, 0.2); /* Gold-tinted border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.home-section p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #b0b7bf;
+}
+
+.btn {
+  background: #d4a017; /* Deep gold */
+  color: #1a2526; /* Dark navy text */
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #b58900; /* Darker gold */
+  box-shadow: 0 0 15px rgba(212, 160, 23, 0.5); /* Gold glow */
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background: #1a2526;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+/* Experience Section */
+.experience-section {
+  padding: 80px 0;
+  background: #1a2526;
+}
+
+.experience-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.experience-item {
+  background: rgba(47, 47, 47, 0.8); /* Semi-transparent gray */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(212, 160, 23, 0.3); /* Gold reflection */
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 80px 0;
+  background: #1a2526;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background: rgba(47, 47, 47, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(212, 160, 23, 0.3);
+}
+
+.github-link {
+  background: #d4a017;
+  color: #1a2526;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  background: #b58900;
+  box-shadow: 0 0 15px rgba(212, 160, 23, 0.5);
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 80px 0;
+  background: #1a2526;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.skills-grid div {
+  background: rgba(47, 47, 47, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(212, 160, 23, 0.3);
+}
+
+/* Education Section */
+.education-section {
+  padding: 80px 0;
+  background: #1a2526;
+}
+
+.education-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.education-item {
+  background: rgba(47, 47, 47, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(212, 160, 23, 0.3);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+  background: #1a2526;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section input, .contact-section textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(47, 47, 47, 0.8);
+  color: #b0b7bf;
+  margin-bottom: 15px;
+}
+
+.contact-section button {
+  background: #d4a017;
+  color: #1a2526;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-section button:hover {
+  background: #b58900;
+  box-shadow: 0 0 15px rgba(212, 160, 23, 0.5);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #2f2f2f, #1a2526);
+  color: #b0b7bf;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+}
