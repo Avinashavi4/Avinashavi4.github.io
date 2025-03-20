@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
 
 // EmailJS integration
 (function() {
-  emailjs.init("G9HwSIq-IQZssNb6V")
+  emailjs.init("x3KCfA1InN_j-aIn2rxd9")
     .then(() => {
       console.log("EmailJS initialized successfully!");
     }, (error) => {
