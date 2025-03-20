@@ -39,7 +39,7 @@ window.addEventListener('scroll', () => {
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent page refresh
 
-  emailjs.sendForm('service_cfmgrnf', 'template_lz5fkpi', this)
+  emailjs.sendForm('service_cfmgrnf', 'template_1z5fkpl', this)
     .then(function() {
       alert('Message sent successfully!');
       document.getElementById('contact-form').reset(); // Clear form
