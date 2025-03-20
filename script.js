@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
 
 // EmailJS integration
 (function() {
-  emailjs.init("yQG3aViKjak3uaBd2")
+  emailjs.init("G9HwSIq-IQZssNb6V")
     .then(() => {
       console.log("EmailJS initialized successfully!");
     }, (error) => {
@@ -43,7 +43,7 @@ window.addEventListener('scroll', () => {
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault(); 
 
-  emailjs.sendForm('service_cfmgrnf', 'template_1z5fkpl', this)
+  emailjs.sendForm('service_0hr2j91', 'template_271zqxn', this)
     .then(function() {
       alert('Message sent successfully!');
       document.getElementById('contact-form').reset(); 
